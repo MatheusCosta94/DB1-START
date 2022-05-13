@@ -1,1 +1,317 @@
+#### ESTRUTURAS CONDICIONAIS
 
+#Lição 1 - Faça um Programa que peça dois números e imprima o maior deles
+
+numero_primeiro = int(input("Digite um número: "))
+numero_segundo = int(input("Digite outro número: "))
+if numero_primeiro > numero_segundo:
+  print("O maior deles é: ", numero_primeiro)
+else:
+  print("O maior deles é: ", numero_segundo)
+
+#Lição 2 - Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo
+
+numero_posit_or_negat = int(input("Digite um número: "))
+if numero_posit_or_negat >= 0:
+  print("O número {numero_posit_or_negat} é positivo ")
+else:
+  print("O número {numero_posit_or_negat} é negativo")
+
+#Lição 3 - Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido
+
+genero = input("Qual seu gênero F ou M: "))
+if genero = F:
+  print("O gênero é : F - Feminino")
+elif genero = M:
+  print("O gênero é : M - Masculino")
+else:
+  print("O gênero indicado é inválido")
+
+#Lição 4 - Faça um Programa que verifique se uma letra digitada é vogal ou consoante
+
+letradigitada = input("Digite uma letra: "))
+if letradigitada = "a" or letradigitada = "e" or letradigitada = "i" or letradigitada = "o" or letradigitada = "u":
+  print("A Letra digitada é Uma vogal")
+elif letradigitada = "b" or letradigitada = "c" orletradigitada = "d" orletradigitada = "f" orletradigitada = "g" orletradigitada = "h" orletradigitada = "j" orletradigitada = "k" orletradigitada = "l" orletradigitada = "m" orletradigitada = "n" or letradigitada = "p" or letradigitada = "q" or letradigitada = "r" or letradigitada = "s" or letradigitada = "t" or letradigitada = "v" or letradigitada = "x" or letradigitada = "y" or letradigitada = "z" or letradigitada = "w":
+  print("A Letra digitada é Uma consoante")
+else:
+  print("ERRO: Digite um caracter que seja uma Letra")
+
+#Lição 5 - Faça um programa para a leitura de duas notas parciais de um aluno, indicando se está aprovado, reprovado ou recuperação
+nota1 = float(input("qual a nota do primeiro bimestre: "))
+nota2 = float(input("qual a nota do segundo bimestre: "))
+nota = (nota1 + nota2)/2
+if nota > 7:
+print("Aluno Aprovado")
+else nota < 7:
+print("Aluno em Recuperação")
+
+#Lição 6 - Faça um Programa que leia três números e mostre o maior
+e o menor deles
+#Maior
+numero1 = int(input("Digite um número: "))
+numero2 = int(input("Digite outro número: "))
+numero3 = int(input("Digite outro número: "))
+
+maior = numero1
+    if (numero2 > maior):
+        maior = numero2
+    if (numero3 > maior):
+        maior = numero3
+
+    print('Maior: ',maior)
+#Menor
+menor = numero1
+
+    if (numero2 < menor):
+        menor = numero2
+    if (numero3 < menor):
+        menor = numero3
+    print('Menor: ',menor)
+
+#Lição 7 - Faça um programa que pergunte o preço de três produtos
+e informe qual produto você deve comprar, sabendo que
+a decisão é sempre pelo mais barato
+produto1 = int(input("Digite o preço do produto 1: "))
+produto2 = int(input("Digite o preço do produto 2: "))
+produto3 = int(input("Digite o preço do produto 3: "))
+Menor = produto1
+
+    if (produto2 < menor):
+        menor = produto2
+    if (produto 3 < menor):
+        menor = produto3
+    
+    print("Você deve comprar o : ", menor)
+
+#Lição 8 - Faça um Programa que leia três números e mostre-os em ordem decrescente
+numero1= int(input("Digite um número: "))
+numero2= int(input("Digite mais um número: "))
+numero3= int(input("Digite mais um número: "))
+Lista = [numero1, numero2, numero3]
+lista.sort(reverse=True)
+print(Lista)
+
+#Lição 9 - Faça um Programa que pergunte em que turno você estuda.
+Peça para digitar M-Matutino ou V- Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
+
+turnoestuda = int(input("Em qual turno você estuda? Digite M para Matutino; V para Vespertino ou N para Noturno: "))
+if (turnoestuda = "M")
+Print ("Bom Dia!")
+Elif (turnoestuda = "V")
+Print ("Boa Tarde!")
+Elif (turnoestuda = "N")
+Print ("Boa Noite!")
+Else:
+Print ("ERRO, digita a letra correspondente ao Turno, M para Matutino; V para Vespertino ou N para Noturno")
+
+#Lição 10 - As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contrataram para desenvolver o programa que calculará os reajustes.
+# Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+# salários até R$ 280,00 (incluindo) : aumento de 20%
+# salários entre R[Math Processing Error] 700,00 : aumento de 15%
+# salários entre R[Math Processing Error] 1500,00 : aumento de 10%
+# salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela:
+# o salário antes do reajuste;
+# o percentual de aumento aplicado;
+# o valor do aumento;
+# o novo salário, após o aumento.
+
+salario = float(input("Digite o valor do salário bruto a sofrer reajuste: "))
+print("O salário antes do reajuste era de: R$ ", salario)
+if salario <= 280:
+    novoSalario = salario * 1.2
+    print("O percentual de aumento aplicado foi de 20%.")
+elif salario >280 and salario <=700:
+    novoSalario = salario * 1.15
+    print("O percentual de aumento aplicado foi de 15%.")
+elif salario >700 and salario <=1500:
+    novoSalario = salario * 1.10
+    print("O percentual de aumento aplicado foi de 10%.")
+else:
+    novoSalario = salario * 1.05
+    print("O percentual de aumento aplicado foi de 5%.")
+print("O valor do aumento dado é de: R$", novoSalario-salario)
+print("O salário reajustado é: R$ ", novoSalario)
+
+#Lição 11-  Faça um programa para o cálculo de uma folha de pagamento, sabendo que os descontos são do Imposto de Renda, que depende do salário bruto (conforme tabela abaixo) e
+# 3% para o Sindicato e que o FGTS corresponde a 11% do Salário Bruto, mas não é descontado (é a empresa que deposita).
+# O Salário Líquido corresponde ao Salário Bruto menos os descontos.
+# O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês.#
+# Desconto do IR:
+# Salário Bruto até 900 (inclusive) – isento
+# Salário Bruto até 1500 (inclusive) – desconto de 5%
+# Salário Bruto até 2500 (inclusive) – desconto de 10%
+# Salário Bruto acima de 2500 – desconto de 20% Imprima na tela as informações
+
+horas = float(input('Digite a quantidade de horas trabalhadas: '))
+valorHora = float(input('Digite o valor da hora trabalhada: '))
+salarioBruto = horas * valorHora
+Fgts = salarioBruto * 0.11
+descSindicato = salarioBruto * 0.03
+
+if salarioBruto <= 900.00:
+    salarioLiquido = salarioBruto - descSindicato
+    percentualIR = 0
+    descIR = 0.00
+elif salarioBruto > 900.00 and salarioBruto <= 1500.00:
+     descIR = salarioBruto * 0.05
+     salarioLiquido = salarioBruto - descSindicato - descIR
+     percentualIR = 5
+elif salarioBruto > 1500.00 and salarioBruto <= 2500.00:
+    descIR = salarioBruto * 0.10
+    salarioLiquido = salarioBruto - descSindicato - descIR
+    percentualIR = 10
+elif salarioBruto > 2500.00:
+    descIR = salarioBruto * 0.20
+    salarioLiquido = salarioBruto - descSindicato - descIR
+    percentualIR = 20
+
+print(f'O seu salário bruto é de: R${salarioBruto:.2f}.')
+print(f'O valor do seu FGTS (11%) nesse mês é de: R${Fgts:.2f}.')
+print(f'O desconto do sindicato (3%) foi de: R${descSindicato:.2f}.')
+print(f'O desconto do imposto de renda ({percentualIR}%) foi de: R${descIR:.2f}.')
+print(f'O seu salário líquido é de: R${salarioLiquido:.2f}')
+
+#Lição 12- Faça um Programa que leia um número e exiba o dia correspondente da semana. (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido.
+diaDaSemana = int(input('Digite um número de 1 à 7: '))
+if diaDaSemana == 1:
+    print('Domingo')
+elif diaDaSemana == 2:
+    print('Segunda-Feira')
+elif diaDaSemana == 3:
+    print('Terça-feira')
+elif diaDaSemana == 4:
+    print('Quarta-feira')
+elif diaDaSemana == 5:
+    print('Quinta-feira')
+elif diaDaSemana == 6:
+    print('Sexta-feira')
+elif diaDaSemana == 7:
+    print('Sábado')
+else:
+    print('Dia da semana inválido!')
+
+# Lição 13 - Faça um programa que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua média.
+A atribuição de conceitos obedece à tabela abaixo: Média de Aproveitamento Conceito Entre 9.0 e 10.0 A Entre 7.5 e 9.0 B Entre 6.0 e 7.5 C Entre 4.0 e 6.0 D Entre 4.0 e zero
+E O algoritmo deve mostrar na tela as notas, a média, o conceito correspondente e a mensagem “APROVADO” se o conceito for A, B ou C ou “REPROVADO” se o conceito for D ou E.
+
+nota_1 = float(input('Digite a primeira nota parcial: '))
+nota_2 = float(input('Digite a segunda nota parcial: '))
+media = (nota_1 + nota_2) / 2
+
+if media <= 10.0 and media >= 0:
+    if media <= 10.0 and media > 9.0:
+        conceito = 'A'
+        situação = 'APROVADO!'
+    elif media <= 9.0 and media > 7.5:
+        conceito = 'B'
+        situação = 'APROVADO!'
+    elif media <= 7.5 and media > 6.0:
+        conceito = 'C'
+        situação = 'APROVADO!'
+    elif media <= 6.0 and media > 4.0:
+        conceito = 'D'
+        situação = 'REPROVADO!'
+    elif media <= 4.0 and media > 0.0:
+        conceito = 'E'
+        situação = 'REPROVADO!'
+    print(f'Média do aluno: {media:.1f}')
+    print(f'Conceito do aluno: {conceito}')
+    print(f'Situação do aluno: {situação}')
+
+else:
+    print('Nota inválida!')
+
+#Lição 14 - Faça um Programa que peça os três lados de um triângulo. O programa deverá informar se os valores podem ser
+um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
+
+
+lado_1 = int(input("Lado 1: "))
+lado_2 = int(input("Lado 2: "))
+lado_3 = int(input("Lado 3: "))
+
+if lado_1 > (lado_2 + lado_3) or lado_2 > (lado_1 + lado_3) or lado_3 > (lado_1 + lado_2):
+   print('Não pode ser um triangulo')
+elif lado_1 == lado_2 == lado_3:
+   print ('Equilatero')
+elif lado_1 == lado_2 or lado_1 == lado_3 or lado_2 == lado_3:
+   print('Isósceles')
+else:
+   print('Escaleno')
+
+
+#Lição 15 - Faça um programa que calcule as raízes de uma equação do segundo grau, na forma ax2 + bx + c
+
+a = float(input('Entre com o valor de a: '))
+b = float(input('Entre com o valor de b: '))
+c = float(input('Entre com o valor de c: '))
+
+delta = (b ** 2) - 4 * a * c
+
+if a == 0:
+    print('O valor de a, deve ser diferente de 0')
+elif delta < 0:
+    print('Não possui raízes reais')
+else:
+    x1 = (-b + delta ** (1 / 2)) / (2 * a)
+    x2 = (-b - delta ** (1 / 2)) / (2 * a)
+
+    print('x1: {}, x2: {}'.format(x1, x2))
+
+
+
+#Lição 16 - Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto.
+
+anoDigitado = int(input('Digite um ano: '))
+if (anoDigitado % 4 == 0 and anoDigitado % 100 != 0) or (anoDigitado % 400 == 0):
+    print('O ano digitado é bissexto')
+else:
+    print('O ano digitado não é bissexto')
+
+
+#Lição 17 - Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
+print('Digite uma data no formato xx/xx/xxxx')
+dia = int(input('Digite um dia: '))
+mes = int(input('Digite um mes: '))
+ano = int(input('Digite um ano: '))
+if dia > 0 and mes > 0 and mes <= 12:
+    if mes >= 1 and mes <= 12:
+        mesValido = True
+    else:
+        mesValido = False
+    if mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10 or mes == 12:
+        if dia <= 31 and dia >= 1:
+            diaValido = True
+        else:
+            diaValido = False
+    elif mes == 4 or mes == 6 or mes == 9 or mes == 11:
+        if dia <= 30 and dia >= 1:
+            diaValido = True
+        else:
+            diaValido = False
+    elif mes == 2:
+        if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+            if dia <= 29 and dia >= 1:
+                diaValido = True
+        elif dia <= 28 and dia >= 1:
+            diaValido = True
+        else:
+            diaValido = False
+    if diaValido == True and mesValido == True:
+        print('A data digitada: {}/{}/{} é válida'.format(dia,mes,ano))
+    else:
+        print('Data inválida!')
+else:
+        print('Data inválida!')
+
+
+
+#Lição 18 - Faça um Programa que leia um número inteiro menor que 1000 e imprima a quantidade de centenas, dezenas e unidades do mesmo.
+
+numeroInformado = int(input('Digite um número de 0 à 9999: '))
+unidade = numeroInformado // 1 % 10
+dezena = numeroInformado // 10 % 10
+centena = numeroInformado // 100 % 10
+milhar = numeroInformado // 1000 % 10
+
+print('A unidade é {}, a dezena é {}, a centena é {} e o milhar é {}'.format(unidade,dezena,centena,milhar))
